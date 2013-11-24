@@ -19,6 +19,8 @@
 		941D5C33184264D700649D05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D5C1B184264D700649D05 /* UIKit.framework */; };
 		941D5C3B184264D700649D05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941D5C39184264D700649D05 /* InfoPlist.strings */; };
 		941D5C3D184264D700649D05 /* ABMExpandingTableViewCellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941D5C3C184264D700649D05 /* ABMExpandingTableViewCellsTests.m */; };
+		941D5C471842652100649D05 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941D5C461842652100649D05 /* iPhone.storyboard */; };
+		941D5C4A184265CB00649D05 /* ExpandingCellDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941D5C49184265CB00649D05 /* ExpandingCellDemoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		941D5C38184264D700649D05 /* ABMExpandingTableViewCellsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ABMExpandingTableViewCellsTests-Info.plist"; sourceTree = "<group>"; };
 		941D5C3A184264D700649D05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		941D5C3C184264D700649D05 /* ABMExpandingTableViewCellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMExpandingTableViewCellsTests.m; sourceTree = "<group>"; };
+		941D5C461842652100649D05 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone.storyboard; path = storyboards/iPhone.storyboard; sourceTree = "<group>"; };
+		941D5C48184265CB00649D05 /* ExpandingCellDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpandingCellDemoVC.h; path = viewcontrollers/ExpandingCellDemoVC.h; sourceTree = "<group>"; };
+		941D5C49184265CB00649D05 /* ExpandingCellDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpandingCellDemoVC.m; path = viewcontrollers/ExpandingCellDemoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +115,9 @@
 				941D5C26184264D700649D05 /* AppDelegate.h */,
 				941D5C27184264D700649D05 /* AppDelegate.m */,
 				941D5C29184264D700649D05 /* Images.xcassets */,
+				941D5C4C184265E400649D05 /* storyboards */,
 				941D5C1E184264D700649D05 /* Supporting Files */,
+				941D5C4B184265D900649D05 /* view controllers */,
 			);
 			path = ABMExpandingTableViewCells;
 			sourceTree = "<group>";
@@ -142,6 +149,23 @@
 				941D5C39184264D700649D05 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		941D5C4B184265D900649D05 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				941D5C48184265CB00649D05 /* ExpandingCellDemoVC.h */,
+				941D5C49184265CB00649D05 /* ExpandingCellDemoVC.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		941D5C4C184265E400649D05 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				941D5C461842652100649D05 /* iPhone.storyboard */,
+			);
+			name = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				941D5C22184264D700649D05 /* InfoPlist.strings in Resources */,
+				941D5C471842652100649D05 /* iPhone.storyboard in Resources */,
 				941D5C2A184264D700649D05 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				941D5C28184264D700649D05 /* AppDelegate.m in Sources */,
+				941D5C4A184265CB00649D05 /* ExpandingCellDemoVC.m in Sources */,
 				941D5C24184264D700649D05 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +467,7 @@
 				941D5C42184264D700649D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		941D5C43184264D700649D05 /* Build configuration list for PBXNativeTarget "ABMExpandingTableViewCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +476,7 @@
 				941D5C45184264D700649D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
