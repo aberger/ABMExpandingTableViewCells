@@ -87,6 +87,12 @@
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+		// disable touch on expanded cell
+	UITableViewCell *cell = [self.theTableView cellForRowAtIndexPath:indexPath];
+	if ([[cell reuseIdentifier] isEqualToString:@"ExpandedCellIdentifier"]) {
+		return;
+	}
+	
 		// deselect row
 	[tableView deselectRowAtIndexPath:indexPath
 							 animated:NO];
