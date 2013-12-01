@@ -127,6 +127,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 	}
 	
 	[tableView endUpdates];
+	
+		// scroll to the expanded cell
+	[self.theTableView scrollToRowAtIndexPath:indexPath
+							 atScrollPosition:UITableViewScrollPositionMiddle
+									 animated:YES];
 }
 
 #pragma mark - controller methods
